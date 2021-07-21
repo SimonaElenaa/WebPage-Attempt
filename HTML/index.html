@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+   <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+   <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Digital&#127758;<span>Nomad</span></a>
+            
+            <img id="menu-btn" class="mobile-menu" src="images/menu.png" alt="menu-btn">
+            
+            <nav>
+                <img id="exit-btn" class="mobile-exit" src="images/exit.png" alt="exit-btn">
+
+                <ul class="main-nav">
+                    <li class="travel"><a href="questionnaire.html" target="blank">Travel</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Photography</a></li>
+
+                </ul>
+
+                <ul class="second-nav">
+                    <li><a href="#">Destination</a></li>
+                    <li class="go-premium"><a href="#">Nomadic Life</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">Travel the world and work at the same time</p>
+                <h3>All beautiful destinations are waiting for you</h3>
+
+                <div class="two-btns">
+                    <a class="info-btn" href="#">More info</a>
+                    <a class="watch-btn" href="https://www.youtube.com/watch?v=linlz7-Pnvw" target="blank"><img src="images/video.png" alt="video image">Watch a video</a>
+                </div>
+            </div>
+
+            <div class="right-col">
+                <img src="images/nomad.png" alt="digital nomad">
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>The Benefits as a Digital Nomad</h2>
+            <ul>
+                <li>Experience new cultures & make new friends.</li>
+                <li>Learn new skills or languages.</li>
+                <li>Spend winters on the beach, and summers on the mountains.</li>
+                <li>The flexibility to live where you want.</li>
+                <li>Broaden your mind through travel experiences.</li>
+                <li>Set your own schedule and take time off when you want to.</li>
+            </ul>
+
+            <img src="images/travel.jpg" alt="travel">
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <ul>
+                <li><img src="images/girl1.jpg" alt="person" ></li>
+                <blockquote>"Living as a digital nomad, you’re able to see incredible places, learn from different cultures, and work when or where you want to — true freedom."</blockquote>
+                <cite>Tracey Johnson</cite>
+            </ul>
+
+            <ul>
+                <li><img src="images/woman.jpg" alt="person"></li>
+                <blockquote>"I don't wanna say I didn’t enjoy my nomadic life for all those years! Just for me, living out of bags for so long eventually lost its charm. I am ready to start a family, settle down, work from home, and travel less."</blockquote>
+                <cite>Olga Hannonen</cite>
+            </ul>
+
+            <ul>
+                <li><img src="images/girl.jpg" alt="person" ></li>
+                <blockquote>"As a digital nomad girl, I’ve worked from many different countries remotely, sometimes on just the tourist entry and sometimes for the longer-term stays I used working visas. I have truly lived the digital nomad lifestyle and i really loved it."</blockquote>
+                <cite>Erin Kelly</cite>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            
+            <div class="contact-left">
+                <h2>Contact</h2>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                    <label for="textarea">Message</label>
+                    <textarea name="textarea" id="textarea" cols="1" rows="1" placeholder="Your message"></textarea>
+                
+                    <input type="submit" class="submit" value="Send message">
+                </form>
+            </div>
+
+            <div class="contact-right">
+                <p>Close your eyes, pick a point from the map and let's go travel the world!</p>
+                <iframe src="https://satellites.pro/" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const mobileBtn = document.getElementById('menu-btn')
+                nav = document.querySelector('nav')
+                mobileBtnExit = document.getElementById('exit-btn');
+
+        mobileBtn.addEventListener('click', () => {
+                nav.classList.add('mobile-menu');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+                nav.classList.remove('mobile-menu');
+        })
+
+    </script>
+</body>
+</html>
