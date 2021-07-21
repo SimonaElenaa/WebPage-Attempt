@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200&display=swap");
+
+body {
+  background: -webkit-gradient(linear, left top, right bottom, from(#bdfcde), color-stop(#bdfcc0), to(#f5ca5f));
+  background: linear-gradient(to bottom right, #bdfcde, #bdfcc0, #f5ca5f);
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.container h3 {
+  margin: 20px 0 51px;
+  font-size: 23px;
+  text-align: center;
+}
+
+.container td {
+  padding-bottom: 30px;
+  padding-right: 20px;
+  color: black;
+}
+
+.container .text:hover {
+  color: #29694b;
+}
+
+.container input, .container textarea {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.container textarea {
+  resize: none;
+}
+
+.container .submit, .container .reset {
+  color: black;
+  background-color: transparent;
+  border: 1px black solid;
+  border-radius: 10px;
+  padding: 5px 12px;
+  margin: 3px 7px 0 0;
+}
+
+.container .submit:hover, .container .reset:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  background-color: #f5ca5f;
+  color: white;
+  border: none;
+}
+
+.container .reset {
+  padding: 5px 17px;
+}
+
+.container a {
+  text-decoration: none;
+  color: white;
+  background-color: #43cc8a;
+  border-radius: 10px;
+  padding: 6px 12px;
+}
+
+.container a:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  color: black;
+  background-color: #e3f7ff;
+  border: none;
+}
+
+@media only screen and (max-width: 765px) {
+  table textarea {
+    width: 90%;
+  }
+  .submit, .reset {
+    display: block;
+  }
+  td input {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 120px;
+        grid-template-columns: 120px;
+  }
+}
+
+@media only screen and (max-width: 355px) {
+  .container {
+    margin: 0;
+  }
+  .container td {
+    display: block;
+  }
+}
