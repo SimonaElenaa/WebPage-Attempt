@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="css/questionnaire.css">
+</head>
+<body>
+    <div class="container">
+        
+        <form>
+            <h3>Travel Planning Questionnaire</h3>
+
+            <table>
+                <tr>
+                    <td class="text">First name:</td>
+                    <td><input type="text" name="fname" maxlength="50" required/></td>
+                </tr>
+
+                <tr>
+                    <td class="text">Last name:</td>
+                    <td><input type="text" name="lname" maxlength="50" required/></td>
+                </tr>
+
+                <tr>
+                    <td class="text">Gender:</td>
+                    <td>
+                        <select name="Gender">
+                            <option value="MA">Male</option>
+                            <option value="FE">Female</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="text">Email:</td>
+                    <td><input type="email" required/></td>
+                </tr>
+
+                <tr>
+                    <td class="text">Phone number:</td>
+                    <td><input type="number"/></td>
+                </tr>
+
+                <tr>
+                    <td class="text">Most important aspect for your accommodations:</td>
+                    <td>
+                        <select name="accommodations">
+                            <option value="view">View</option>
+                            <option value="spa">Spa</option>
+                            <option value="pool">Pool</option>
+                            <option value="gym">Gym</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="text">Number of travelers you would like to travel with:</td>
+                    <td>
+                        <select name="travelers">
+                            <option value="alone">Alone</option>
+                            <option value="four">&lt; 4</option>
+                            <option value="eight">4 - 8</option>
+                            <option value="more"> &gt; 8 </option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="text">Your general interests/hobbies:</td>
+                    <td>
+                        <input type="checkbox" name="sea" /> Beach / Water Sports
+                        <input type="checkbox" name="mountain" /> Hiking / Zip lining / Rafting
+                        <input type="checkbox" name="culture" /> Music / Theater / Museums
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="text">What kind of vibe are you looking for:</td>
+                    <td>
+                        <input type="radio" name="estatus" value="relax" /> Rest and Relaxation
+                        <input type="radio" name="estatus" value="adventure" /> Adventure
+                        <input type="radio" name="estatus" value="romantic" /> Romantic
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="text">Additional Comments</td>
+                    <td>
+                        <textarea name="comments" cols="75" rows="4" placeholder="Enter your message"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input class="submit" type="submit" name="submit" value="Submit" />
+                        <input class="reset" type="reset" name="reset" value="Reset" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <a href="index.html">Home</a>
+    </div>
+</body>
+</html>
